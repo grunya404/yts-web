@@ -285,6 +285,8 @@ For marketing and media proposals,  write to us at <a data-toggle="modal" data-t
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
       function initialize() {
+        var bluem = 'images/blue-marker.png';
+        var redm = 'images/red-marker.png';
         var mapCanvas = document.getElementById('d-banner-main-map');
         var mapOptions = {
           center: new google.maps.LatLng(22.9571121, 76.330035),
@@ -292,20 +294,142 @@ For marketing and media proposals,  write to us at <a data-toggle="modal" data-t
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker1 = new google.maps.Marker({
-          position: new google.maps.LatLng(22.9571121, 76.330035),
-          map: map,
-          title: 'Service Center'
+
+        /* Mumbai */
+        var content_c1 = "Mumbai Center";
+        var infowindow_c1 = new google.maps.InfoWindow({
+            content: content_c1
         });
-        var marker2 = new google.maps.Marker({
-          position: new google.maps.LatLng(12.905834,77.598305),
+        var marker_c1 = new google.maps.Marker({
+          position: new google.maps.LatLng(19.0822507, 72.8812042),
           map: map,
-          title: 'Service Center'
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
         });
-        var marker3 = new google.maps.Marker({
-          position: new google.maps.LatLng(19.048726,72.914351),
+        google.maps.event.addListener(marker_c1, 'click', function() {
+          infowindow_c1.open(map,marker_c1);
+        });
+        /* Delhi */
+        var content_c2 = "Delhi Center";
+        var infowindow_c2 = new google.maps.InfoWindow({
+            content: content_c2
+        });
+        var marker_c2 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.6454414,77.0907573),
           map: map,
-          title: 'Service Center'
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
+        });
+        google.maps.event.addListener(marker_c2, 'click', function() {
+          infowindow_c2.open(map,marker_c2);
+        });
+        /* Patna */
+        var content_c3 = "Patna Center";
+        var infowindow_c3 = new google.maps.InfoWindow({
+            content: content_c3
+        });
+        var marker_c3 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.6089598,85.1641572),
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
+        });
+        google.maps.event.addListener(marker_c3, 'click', function() {
+          infowindow_c3.open(map,marker_c3);
+        });
+        /* Kolkata */
+        var content_c4 = "Kolkata Center";
+        var infowindow_c4 = new google.maps.InfoWindow({
+            content: content_c4
+        });
+        var marker_c4 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.6757244,88.368587),
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
+        });
+        google.maps.event.addListener(marker_c4, 'click', function() {
+          infowindow_c4.open(map,marker_c4);
+        });
+        /* Kochi */
+        var content_c5 = "Kochi Center";
+        var infowindow_c5 = new google.maps.InfoWindow({
+            content: content_c5
+        });
+        var marker_c5 = new google.maps.Marker({
+          position: new google.maps.LatLng(9.938611,76.3204337),
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
+        });
+        google.maps.event.addListener(marker_c5, 'click', function() {
+          infowindow_c5.open(map,marker_c5);
+        });
+        /* Surat */
+        var content_c6 = "Surat Center";
+        var infowindow_c6 = new google.maps.InfoWindow({
+            content: content_c6
+        });
+        var marker_c6 = new google.maps.Marker({
+          position: new google.maps.LatLng(21.1592069,72.8223832),
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: bluem,
+          title: 'Customer Center'
+        });
+        google.maps.event.addListener(marker_c6, 'click', function() {
+          infowindow_c6.open(map,marker_c6);
+        });
+
+        /* Mumbai */
+        var content_o1 = "Mumbai Office Address";
+        var infowindow_o1 = new google.maps.InfoWindow({
+            content: content_o1
+        });
+        var marker_o1 = new google.maps.Marker({
+          position: new google.maps.LatLng(19.0822507, 72.8812042),
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: redm,
+          title: 'Office'
+        });
+        google.maps.event.addListener(marker_o1, 'click', function() {
+          infowindow_o1.open(map,marker_o1);
+        });
+        /* Lucknow */
+        var content_o2 = "Lucknow Office Address";
+        var infowindow_o2 = new google.maps.InfoWindow({
+            content: content_o2
+        });
+        var marker_o2 = new google.maps.Marker({
+          position: new google.maps.LatLng(26.848692,80.9425127),
+          map: map,
+          icon: redm,
+          animation: google.maps.Animation.DROP,
+          title: 'Office'
+        });
+        google.maps.event.addListener(marker_o2, 'click', function() {
+          infowindow_o2.open(map,marker_o2);
+        });
+        /* Bangalore */
+        var content_o3 = "Banglaore Office Address - Coming Soon";
+        var infowindow_o3 = new google.maps.InfoWindow({
+            content: content_o3
+        });
+        var marker_o3 = new google.maps.Marker({
+          position: new google.maps.LatLng(12.9539974,77.6309395),
+          map: map,
+          icon: redm,
+          animation: google.maps.Animation.DROP,
+          title: 'Office - Coming Soon'
+        });
+        google.maps.event.addListener(marker_o3, 'click', function() {
+          infowindow_o3.open(map,marker_o3);
         });
         
       }
