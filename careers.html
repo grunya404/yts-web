@@ -598,48 +598,48 @@ and excel them.</p>
                     <h4 class="modal-title" id="myModalLabel">Apply Now</h4>
                   </div>
                   <div class="modal-body">
-                      <form class="form-horizontal">
+                      <form class="form-horizontal" action="submit_success.php" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                           <label for="inputEmail2" class="col-sm-3 control-label">Name</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail2" placeholder="Enter Name">
+                            <input type="text" name="Name" value="" class="form-control" id="inputEmail2" placeholder="Enter Name"></input>
                           </div>
                         </div>
                         <div class="form-group">
                           <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
                           <div class="col-sm-9">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Email ID">
+                            <input type="email" name="Email" value="" class="form-control" id="inputEmail3" placeholder="Enter Email ID">
                           </div>
                         </div>
                         <div class="form-group">
                           <label for="inputPassword3" class="col-sm-3 control-label">Contact Number</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputPassword3" placeholder="Enter contact number">
+                            <input type="text" name="Contact" value="" class="form-control" id="inputPassword3" placeholder="Enter contact number">
                           </div>
                         </div>
                         <div class="form-group">
                           <label  class="col-sm-3 control-label">References, if any</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control"  placeholder="Enter reference name">
+                            <input type="text" name="Ref" value="" class="form-control"  placeholder="Enter reference name">
                           </div>
                         </div>
                         <div class="form-group">
                           <label  class="col-sm-3 control-label">Current Location</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="Enter current location">
+                            <input type="text" name="Loc" value="" class="form-control" placeholder="Enter current location">
                           </div>
                         </div>
                         <div class="form-group">
                           <label  class="col-sm-3 control-label">Upload CV</label>
                           <div class="col-sm-9  ">
-                            <input type="file" class="form-control">
+                            <input type="file" name="file" id="file" class="form-control">
                           </div>
                         </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button class="btn btn-primary">Send Application</button>
+                        </div>
                       </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send Application</button>
                   </div>
                 </div>
               </div>
