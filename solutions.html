@@ -126,7 +126,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/MoSaPay.png"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="Mosa Pay"><img src="images/MoSaPay.png"></a>
                      </div>
                      <h4>> Financial Inclusion</h4>
                      <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
@@ -135,7 +135,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/PayDesh.png"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="Pay Desh"><img src="images/PayDesh.png"></a>
                      </div>
                      <h4>> Microloan Payments</h4>
                      <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
@@ -146,7 +146,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/eKash_Logo.png"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="eKash"><img src="images/eKash_Logo.png"></a>
                      </div>
                      <h4>> Salary Payments</h4>
                      <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
@@ -155,7 +155,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/TEZ.png"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="Tez"><img src="images/TEZ.png"></a>
                      </div>
                      <h4>> International Remittance</h4>
                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>  
@@ -169,7 +169,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/PhatSe.png"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="Phat Se"><img src="images/PhatSe.png"></a>
                      </div>
                      <h4>> Money Transfer</h4>
                      <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
@@ -178,7 +178,7 @@
                    <div class="col-sm-12">
                     <div class="d-solution-each">
                      <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
+                       <a class="d-product-link" data-toggle="modal" data-target="#d-solution-modal" data-solution="Mosa Pay"><img src="images/mosa-pay.jpg"></a>
                      </div>
                      <h4>> Online Payments</h4>
                      <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
@@ -220,6 +220,12 @@
                         <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
                         <div class="col-sm-10">
                           <input type="email" class="form-control" id="inputPassword3" placeholder="Enter Email ID" data-parsley-required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Solution</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control d-product-name" placeholder="Product name">
                         </div>
                       </div>
                       <div class="form-group">
@@ -380,6 +386,10 @@
       $('.d-mobile-menu').click(function(){
           $('.d-sidenav-menu').slideToggle();
         });
+      $('.d-product-link').click(function(){
+        var solution = $(this).attr('data-solution');
+        $('.d-product-name').val(solution);
+      });
     });
     </script>
    
