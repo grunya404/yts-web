@@ -11,9 +11,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,6 +28,11 @@
         <div class="row">
           <!-- sidebar nav -->
           <div class="col-sm-3 col-md-2 d-sidenav">
+              <div class="d-mobile-menu">
+                <p class="text-right">
+                  <a><span class="glyphicon glyphicon-align-justify"></span></a>
+                </p>
+              </div>
               <div class="d-main-logo">
                 <p class="text-center">
                   <img src="images/main-logo.png">
@@ -40,7 +45,7 @@
                     <a href="index.html">Home <span class="glyphicon glyphicon-home"></span> </a>
                   </li>
                   <li>
-                    <a href="inspiration.html">Inspiration <span class="glyphicon glyphicon-eye-open"></span> </a>
+                    <a href="inspiration.html">Inspiration <span class="glyphicon glyphicon-leaf"></span> </a>
                   </li>
                   <li class="active">
                     <a href="solutions.html">Solutions <span class="glyphicon glyphicon-ok-circle"></span> </a>
@@ -49,7 +54,7 @@
                     <a href="people.html">People <span class="glyphicon glyphicon-user"></span> </a>
                   </li>
                   <li>
-                    <a href="careers.html">Careers <span class="glyphicon glyphicon-briefcase"></span> </a>
+                    <a href="careers.html">Careers <span class="glyphicon glyphicon-road"></span> </a>
                   </li>
                   <li>
                     <a href="contact.html">Contact <span class="glyphicon glyphicon-comment"></span> </a>
@@ -67,98 +72,129 @@
                 <br><h4 class="d-sub-heading">Solutions</h4>
                 <h2 class="d-heading d-heading-main">YTS - Yatra Tatra Sarvatra</h2>
                 <div class="d-banner-main">
-                  <img src="images/solutions-banner.jpg">
+                  <img src="images/YTS_Solution Gap_Mobile.png">
+                 <!--  <h2 class="d-solutions-text">
+                    Bridging the<br> solution gap
+                  </h2> -->
                 </div>
                 
 
               </div>
               </div>
               <br><br>
-              <div class="row d-grey-bg">
+              <div class="row">
                 <div class="col-md-12">
                   <h3 class="d-heading">Our capability</h3>
                   <div class="row">
                     <div class="col-sm-4 d-capa-each">
                       <div class="d-capa-img">
-                        <img src="images/capa-01.jpg">
+                        <img src="images/capa-01.png">
                       </div>
                       <h4>> Diversified Distribution Network</h4>
                       <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                     </div>
                     <div class="col-sm-4 d-capa-each">
                       <div class="d-capa-img">
-                        <img src="images/capa-02.jpg">
+                        <img src="images/capa-02.png">
                       </div>
                       <h4>> Omni Channel Design</h4>
                       <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                     </div>
                     <div class="col-sm-4 d-capa-each">
                       <div class="d-capa-img">
-                        <img src="images/capa-03.jpg">
+                        <img src="images/capa-03.png">
                       </div>
-                      <h4>> Mobility Platform (web, wap, app, sms, ivrs)</h4>
+                      <h4>> Mobility Platform</h4>
                       <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                     </div>
                   </div>
                 </div>
               </div>
-             
-             <div class="row">
+             <br><br>
+             <div class="row d-grey-bg">
                <div class="col-md-12">
-                 <br><br><h3 class="d-heading">Digital Solutions</h3>
+                 <h3 class="d-heading">Digital Solutions</h3>
                  <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India with an ability to manage end-to-end services operations.</p>
-                 <div class="d-footer-line"></div>
+                 <div class="d-image-wrap">
+                   <img src="images/YTS_Services_Ecosystem.jpg">
+                 </div>
+                 
                </div>
-               <div class="col-md-12">
-                 <h2>B2B</h2>
+               <div class="col-md-6 d-solutions-wrap">
+                 <h2><img src="images/b2b.png">B2B</h2>
                  <div class="row">
-                   <div class="col-sm-3">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/MoSaPay.png"></a>
+                     </div>
                      <h4>> Financial Inclusion</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                      </div>
                    </div>
-                   <div class="col-sm-3">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/PayDesh.png"></a>
+                     </div>
                      <h4>> Microloan Payments</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
-                     </div>
-                   </div>
-                   <div class="col-sm-3">
-                     <h4>> Salary Payments</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
-                     </div>
-                   </div>
-                   <div class="col-sm-3">
-                     <h4>> International Remittance</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                      </div>
                    </div>
                  </div>
-               </div>
-               <div class="col-md-12">
-                 <h2>B2C</h2>
                  <div class="row">
-                   <div class="col-sm-3">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/eKash_Logo.png"></a>
+                     </div>
+                     <h4>> Salary Payments</h4>
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
+                    </div>
+                   </div>
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/TEZ.png"></a>
+                     </div>
+                     <h4>> International Remittance</h4>
+                    <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>  
+                    </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-6 d-solutions-wrap">
+                 <h2><img src="images/b2c.png">B2C</h2>
+                 <div class="row">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/PhatSe.png"></a>
+                     </div>
                      <h4>> Money Transfer</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/tez-logo.jpg"></a>
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                      </div>
                    </div>
-                   <div class="col-sm-3">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/mosa-pay.jpg"></a>
+                     </div>
                      <h4>> Online Payments</h4>
-                     <div class="d-sol-img-wrap">
-                       <a data-toggle="modal" data-target="#d-solution-modal"><img src="images/tez-logo.jpg"></a>
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
                      </div>
                    </div>
-                   <div class="col-sm-3">
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-12">
+                    <div class="d-solution-each">
+                     <div class="d-sol-img-wrap">
+                       <p class="text-center">Coming Soon</p>
+                     </div>
                      <h4>> Lending </h4>
-                     <p>Coming Soon</p>
-                     
+                     <p>We offer the industries most comprehensive set of digital solutions to enable delivery of financial services pan India.</p>
+                     </div>
                    </div>
-                   
                  </div>
                </div>
              </div>
@@ -173,23 +209,23 @@
                     <h4 class="modal-title" id="myModalLabel">Send Request</h4>
                   </div>
                   <div class="modal-body">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="" method="POST" enctype="multipart/form-data" data-parsley-validate>
                       <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputEmail3" placeholder="Enter name">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Enter name" data-parsley-required>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputPassword3" placeholder="Enter Email ID">
+                          <input type="email" class="form-control" id="inputPassword3" placeholder="Enter Email ID" data-parsley-required>
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-sm-2 control-label">Company</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputPassword3" placeholder="Enter Company name">
+                          <input type="text" class="form-control" id="inputPassword3" placeholder="Enter Company name" data-parsley-required>
                         </div>
                       </div>
                     </form>
@@ -223,7 +259,7 @@
                           <div class="d-date-wrap">
                             <h3>22 January</h3>
                           </div>
-                          <h5>Our Media</h5>
+                          <h5>Our Timeline</h5>
                           <h2>Life is made of the five universal elements</h2>
                         </div>
                       </div>
@@ -234,7 +270,7 @@
                           <div class="d-date-wrap">
                             <h3>22 January</h3>
                           </div>
-                          <h5>Our Timelines</h5>
+                          <h5>Our Story</h5>
                           <h2>Freedom to do transactions from anywhere</h2>
                         </div>
                       </div>
@@ -245,7 +281,7 @@
                           <div class="d-date-wrap">
                             <h3>22 January</h3>
                           </div>
-                          <h5>Our Story</h5>
+                          <h5>Our Media</h5>
                           <h2>Healthy and profitable solutions for consumers</h2>
                         </div>
                       </div>
@@ -273,17 +309,17 @@
                       </div>
                       <div class="col-xs-4">
                         <p class="text-center">
+                          <a href="cutomer-grievance.html">Customer Grievance</a>
+                        </p>
+                      </div>
+                      <div class="col-xs-4">
+                        <p class="text-center">
                           <a href="disclaimer.html">Disclaimer</a>
                         </p>
                       </div>
                       <div class="col-xs-4">
                         <p class="text-center">
                           <a href="privacy-policy.html">Privacy Policy</a>
-                        </p>
-                      </div>
-                      <div class="col-xs-4">
-                        <p class="text-center">
-                          <a href="site.html">Site Map</a>
                         </p>
                       </div>
                       <div class="col-xs-4">
@@ -318,8 +354,7 @@
                       © 2015 YTS. All Rights Reserved.
                     </p>
                     <ul>
-                      <li><a href="terms.html">Terms of Use</a></li>
-                      <li><a href="cutomer-grievance.html">Customers  Grievance Redressal</a></li>
+                      <li><a href="site.html">Terms of Use</a></li>
                     </ul>
                   </div>
                 </div>
@@ -339,6 +374,14 @@
     <script src="js/bootstrap.min.js"></script> -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/parsley.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.d-mobile-menu').click(function(){
+          $('.d-sidenav-menu').slideToggle();
+        });
+    });
+    </script>
    
   </body>
 </html>
