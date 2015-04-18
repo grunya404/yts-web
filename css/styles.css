@@ -15,6 +15,7 @@ p{
 	color: #222;
 	line-height: 27px;
 	font-weight: 300;
+	text-align: justify;
 }
 .btn{
 	border-radius: 2px !important;
@@ -78,6 +79,7 @@ p{
 	max-height: 430px;
 	overflow: hidden;
 }
+
 .d-banner-sub{
 	overflow: hidden;height: 300px;
 }
@@ -86,6 +88,27 @@ p{
 }
 .d-banner-main img{
 	width: 100%;
+}
+.d-banner-main h1{
+	font-size: 50px;
+	margin-top: 150px;
+}
+@media(max-width: 767px){
+	.d-banner-main img{
+		width: 150%;
+		margin-left: -20%;
+		text-align: center;
+		vertical-align: middle;
+		height: auto;
+	}
+	
+	.d-banner-main-solutions img{
+		margin-left: 0%;
+		width: 120%;
+	}
+	.d-banner-main-career img{
+		margin-left: -26%;
+	}
 }
 #d-banner-main-map{
 	height: 400px;
@@ -129,7 +152,7 @@ p{
 }
 .d-footer-top h3{
 	color: #3c1742;
-	font-size: 40px;
+	font-size: 22px;
 	font-weight: 300;
 }
 .d-footer-cards{
@@ -138,7 +161,10 @@ p{
 .d-footer-card-each{
 	border:1px solid #ccc;
 	padding: 10px 20px;
-	min-height: 150px;
+	height: 200px;
+	margin-bottom: 20px;
+	overflow-y:scroll;
+	background: #fff;
 }
 .d-social-icons-list{
 	list-style: none;
@@ -147,6 +173,11 @@ p{
 .d-social-icons-list li{
 	float: left;
 	margin-right: 5px;
+}
+@media(max-width: 767px){
+	.d-social-icons-list{
+		margin-left: 30%;
+	}
 }
 .d-date-wrap{
 	overflow: hidden;
@@ -175,12 +206,12 @@ p{
 	color: #444;
 	margin: 10px 0px 5px 0px;
 }
-.d-footer-cards a .d-footer-card-each{
+.d-footer-cards .d-footer-card-each{
 	transition:all 0.3s;
 	background: #fff;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
-.d-footer-cards a:hover .d-footer-card-each{
+.d-footer-cards .d-footer-card-each:hover{
 	box-shadow: 0px 0px 20px rgba(0,0,0,0);	
 }
 .d-footer-bottom{
@@ -215,6 +246,12 @@ p{
 	font-size: 18px;
 	line-height: 40px;
 	color: #444;
+}
+@media(max-width: 767px){
+	.d-footer-links a{
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
 }
 .d-main-logo{
 	padding:30px 0px 0px 0px;
@@ -274,12 +311,17 @@ p{
 }
 .d-four-points h4{
 	text-align: center;
-	font-size: 27px;
+	font-size: 20px;
 	font-weight: 300;
 }
 .d-four-point-each img{
-	width: 70%;
-	margin-left: 15%;
+	width: 73%;
+	margin: 0px auto;
+}
+@media(max-width: 767px){
+	.d-four-point-each h4{
+		margin-bottom: 30px;
+	}
 }
 .d-key-people-wrap img{
 	width: 100%;
@@ -348,7 +390,7 @@ p{
 }
 .d-dark-grey-bg{
 	background: #f5f4f4;
-	min-height: 250px;
+	min-height: 300px;
 	padding: 20px 40px;
 }
 .d-dark-grey-bg h3{
@@ -357,7 +399,7 @@ p{
 .d-org-bg{
 	background: #d25134;
 	color: #fff;
-	min-height: 250px;
+	min-height: 300px;
 }
 .d-org-bg .carousel{
 	margin: 0px -15px;
@@ -385,11 +427,10 @@ p{
 	cursor: pointer;
 }
 .d-life-img .col-sm-6{
-	height: 325px;
 	overflow: hidden;
 }
 .d-life-img .col-sm-6 .col-xs-6{
-	height: 150px;
+	height: 186px;
 	margin-bottom: 25px;
 	overflow: hidden;
 }
@@ -419,6 +460,12 @@ p{
 	font-size: 13px;
 	line-height: 18px;
 }
+.d-job-each-wrap p{
+	text-align: left;
+}
+.d-job-each-wrap p.text-center{
+	text-align: center;
+}
 .d-job-each .row{
 	border-bottom: 1px solid #ddd;
 	padding-top: 10px;
@@ -436,8 +483,8 @@ p{
 	padding-top: 20px;
 }
 .d-inspiration-icon-wrap > img{
-	width: 70%;
-	margin-left: 15%;
+	width: 90%;
+	margin-left: 5%;
 }
 .d-ins-img-wrap{
 	margin-left: 20%;
@@ -517,8 +564,20 @@ p{
 	background: #fff;
 	margin: 10px auto 0px auto;
 	border:1px solid #ddd;
+	overflow: hidden;
 }
-@media( max-width: 768px){
+.d-partners-logo img{
+	width: 120px;
+}
+.d-partners-logo-each{
+	float: left;
+	margin:10px 30px;
+	height: 60px;overflow: hidden;
+}
+.d-dark-white{
+	background: #fff;
+}
+@media( max-width: 767px){
 	.d-sidenav{
 		width: 100%;
 	}
@@ -533,7 +592,12 @@ p{
 		display: none;
 	}
 	.d-sub-heading{
-		margin-top: 100px;
+		margin-top: 90px;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	.d-heading{
+		font-size: 27px;
 	}
 	.d-main-logo{
 		height: 110px;
