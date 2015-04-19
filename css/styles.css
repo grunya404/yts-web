@@ -180,7 +180,14 @@ p{
 	}
 }
 .d-date-wrap{
-	overflow: hidden;
+	width: 75%;
+	position: absolute;
+	top:160px;
+	right:-18%;
+}
+.d-date-wrap img{
+	
+	width: 20px;
 }
 .d-date-wrap h3{
 	color: #fff;
@@ -190,10 +197,6 @@ p{
 	font-weight: 700;
 	float: left;
 	padding: 5px 10px;
-}
-.d-date-wrap p{
-	color: #fff;
-	font-size: 13px;
 }
 .d-footer-card-each h2{
 	color: #222;
@@ -428,9 +431,10 @@ p{
 }
 .d-life-img .col-sm-6{
 	overflow: hidden;
+	height: 385px;
 }
 .d-life-img .col-sm-6 .col-xs-6{
-	height: 186px;
+	height: 180px;
 	margin-bottom: 25px;
 	overflow: hidden;
 }
@@ -513,6 +517,9 @@ p{
 	font-size: 12px;
 	line-height: 19px;
 }
+.d-capa-each h4:first-child{
+	font-weight: bold;
+}
 .d-solutions-text{
 	position: absolute;
 	top:200px;
@@ -565,14 +572,17 @@ p{
 	margin: 10px auto 0px auto;
 	border:1px solid #ddd;
 	overflow: hidden;
+	min-height: 250px;
 }
 .d-partners-logo img{
-	width: 120px;
+	width: 80px;
 }
 .d-partners-logo-each{
 	float: left;
-	margin:10px 30px;
-	height: 60px;overflow: hidden;
+	margin:10px 0px 10px 15px;
+	padding-right: 15px;
+	height: 40px;overflow: hidden;
+	border-right:1px solid #ccc;
 }
 .d-dark-white{
 	background: #fff;
