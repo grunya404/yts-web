@@ -1,5 +1,5 @@
 <?php
- include('/var/www/yts/db.php');
+include("/var/www/yts/db.php");
 ?>
 <html>
 <head>
@@ -12,6 +12,14 @@
 		$to = $_POST['email'];
 		$sol = $_POST['solution'];
 		$company = $_POST['company'];
+
+		$sql = "INSERT INTO `yts`(`name`, `email`, `company`) VALUES ('A','d@gmail.com','abcd')";
+		// die($sql);
+		if($id = mysqli_query($con,$sql)){
+			return true;
+		}else{
+			return false;
+		}
 
 		if($sol == 'YTS Wallet Solution '){
 			$link = "https://www.slideshare.net/secret/AE9ZWKGX5qH0Jy";
@@ -29,15 +37,7 @@
 			$link = "https://www.slideshare.net/secret/1iHWomkQtcLSIk";
 		}
 		
-		$sql = "INSERT INTO `yts`('name','email','company') VALUES ('$name','$to','$company')";
-		// die($sql);
-		if($id = mysqli_query($con,$sql)){
-			die('done');
-			return true;
-		}else{
-			die('wrong');
-			return false;
-		}
+		
 
 		$subject = "Dhanax : Thanks for connecting";
 		$txt = $sol;
@@ -46,9 +46,8 @@
 		/* set sender of the mail*/
 		$headers = "From: $from";
 
-		// mail($to,$subject,$txt,$headers);
+		mail($to,$subject,$txt,$headers);
 
-		// mail($to,$subject,$txt,$headers);
 	?>
 	<!-- end of send mail -->
 		<p>Hi <?php echo $name?>, the link to your solution is <?php if($link !="NA") echo $link; ?>.</p>
