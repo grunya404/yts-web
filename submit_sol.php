@@ -13,7 +13,7 @@ include("/var/www/yts/db.php");
 		$sol = $_POST['solution'];
 		$company = $_POST['company'];
 
-		$sql = "INSERT INTO `yts`(`name`, `email`, `company`) VALUES ('A','d@gmail.com','abcd')";
+		$sql = "INSERT INTO `store_sol`(`name`, `email`, `company`) VALUES ('$name','$to','$company')";
 		// die($sql);
 		if($id = mysqli_query($con,$sql)){
 			return true;
@@ -39,7 +39,7 @@ include("/var/www/yts/db.php");
 		
 		
 
-		$subject = "Dhanax : Thanks for connecting";
+		$subject = "YTS : Thanks for connecting";
 		$txt = $sol;
 		
 		$from = "no-reply@yts.net.in";
