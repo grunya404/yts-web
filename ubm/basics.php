@@ -132,26 +132,28 @@ $('.nav-blank').fadeOut('fast')
                       <div class="st-content">
                        
             <div class="contact-detail">
-                       <?php
-					   $sqlWallet = mysql_query("SELECT * FROM `basic_points` WHERE `title_id` = 1 AND `flag` = 1 ");
-					   while($resultWallet = mysql_fetch_array($sqlWallet))
-					   {
-					   $point_id = $resultWallet['id'] ;
-					   ?>
-                       <p><strong><?php echo stripslashes(html_entity_decode($resultWallet['point'],ENT_QUOTES)); ?></strong></p>
-					   <?php
-					   
-					   $sqlWallet1 = mysql_query(" SELECT * FROM `basic_descriptions` WHERE `point_id` = '$point_id' AND `flag` = '1' ");
-					   while($resultWallet1 = mysql_fetch_array($sqlWallet1))
-					   {
-					   ?>
-                      
-                      <p class="listing"><?php echo stripslashes(html_entity_decode( $resultWallet1['desc'],ENT_QUOTES)); ?></p>
-                      
-                        <?php
-					  } //desc
-					  }// point
-					  ?>
+                     <p>
+                     	Wallet is auto-activated once an Agent registers a new customer in the system<br><br>
+Customer will receive Two SMSs:<br>
+•	1st SMS - “Dear < First Name > , Welcome to YTS Union Bank Money! Your mobile account is active. Balance is Rs. < XXX >. First Time pin is < YYYY >. You may transact now”<br>
+•	2nd SMS - “Your ATM card no. is XXXX < Last 4 digits of ATM card >. Transact for Rs.10 or above and get immediate cash back of Rs.25. Call us on 180030004300”<br><br>
+
+ATM Card Activation – It will be auto activated along with the wallet<br><br>
+Please Note - Customer has to change its “First Time PIN” in the given scenarios<br><br>
+Scenario 1: Transaction amount is Rs. 500 or Above<br>
+•	Customer would receive an IVR prompt to change its PIN<br>
+•	Customer to enter its “First Time PIN” received in ‘1st SMS’ and then sets its new PIN and finish the transaction.<br>
+•	Thereafter, the new PIN will be used for all transactions and ATM cash withdrawals<br><br>
+
+Scenario 2: Transaction amount is below Rs. 500<br><br>
+
+If PIN is not changed during First transaction and for the Second transaction amount was below 500, customer has to change its PIN in Third transaction<br>
+•	During 3rd transaction:  Customer would receive an IVR prompt to change its PIN<br>
+•	Customer to enter its “First Time PIN” received in ‘1st SMS’ and then sets its new PIN and finish the transaction<br>
+•	Thereafter, the new PIN will be used for all transactions and ATM cash withdrawals<br>
+
+
+                     </p>
                       <div class="table-notes"><strong>Note:</strong> Union Bank of India takes minimum 5 working days to verify and activate a
 UBM wallet</div>
                       
@@ -313,26 +315,13 @@ UBM wallet</div>
                        
              <div class="contact-detail">
                         
-                         <?php
-					   $sqlPin = mysql_query("SELECT * FROM `basic_points` WHERE `title_id` = 5 AND `flag` = 1 ");
-					   while($resultPin = mysql_fetch_array($sqlPin))
-					   {
-					   $point_id = $resultPin['id'] ;
-					   ?>
-                       <p><strong><?php echo stripslashes(html_entity_decode( $resultPin['point'],ENT_QUOTES)); ?></strong></p>
-					   <?php
-					   $sqlPin1 = mysql_query(" SELECT * FROM `basic_descriptions` WHERE `point_id` = '$point_id' AND `flag` = 1 ");
-					   while($resultPin1 = mysql_fetch_array($sqlPin1))
-					   {
-					   ?>
-					   
-					   <p class="listing"><?php echo stripslashes(html_entity_decode( $resultPin1['desc'],ENT_QUOTES)); ?></p>
-           
-					   
-					     <?php
-					  } //desc
-					  }// point
-					  ?>
+                      <p>In case you forget the mPIN please follow these steps.<br>
+Call Customer Care 1800 3000 4300   and raise your request for setting the mPIN<br>
+After the account verification, Customer Care team would reset the new mPIN<br>
+Receive the SMS with 4 digit temporary PIN (Valid for 24 hours)<br>
+Type 'RESET' and send the SMS on 96860 555 55<br>
+Receive an IVR call and select option to reset the mPIN<br>
+Enter temporary pin (Received through SMS), create and then confirm the new mPIN</p>
                        </div>  
                        </div>
                         </li>

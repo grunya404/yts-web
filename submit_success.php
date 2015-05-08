@@ -24,7 +24,7 @@
 	    chmod($targetFile, 0777);
 		/* end of upload */
 
-		$to = "hr@yts.net.in ";
+		$to = "careers@yts.net.in ";
 		$subject = "Application Submitted";
 		$txt = "Thanks for applying at YTS. We will get back to you shortly";
 		
